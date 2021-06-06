@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F1455E2266982FA00C65F26 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1455E1266982FA00C65F26 /* Weather.swift */; };
 		9F9346942668154E005D9B13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9346932668154E005D9B13 /* AppDelegate.swift */; };
 		9F9346962668154E005D9B13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9346952668154E005D9B13 /* SceneDelegate.swift */; };
 		9F9346982668154E005D9B13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9346972668154E005D9B13 /* ViewController.swift */; };
@@ -15,6 +16,7 @@
 		9F9346A02668154F005D9B13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F93469E2668154F005D9B13 /* LaunchScreen.storyboard */; };
 		9F9346AB2668154F005D9B13 /* Z4CastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9346AA2668154F005D9B13 /* Z4CastTests.swift */; };
 		9F9346B62668154F005D9B13 /* Z4CastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9346B52668154F005D9B13 /* Z4CastUITests.swift */; };
+		9FB01EAC266BFF280000EEE4 /* UnitSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB01EAB266BFF280000EEE4 /* UnitSetting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F1455E1266982FA00C65F26 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		9F9346902668154E005D9B13 /* Z4Cast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Z4Cast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9346932668154E005D9B13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F9346952668154E005D9B13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		9F9346B12668154F005D9B13 /* Z4CastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Z4CastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9346B52668154F005D9B13 /* Z4CastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z4CastUITests.swift; sourceTree = "<group>"; };
 		9F9346B72668154F005D9B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FB01EAB266BFF280000EEE4 /* UnitSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitSetting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				9F93469C2668154F005D9B13 /* Assets.xcassets */,
 				9F93469E2668154F005D9B13 /* LaunchScreen.storyboard */,
 				9F9346A12668154F005D9B13 /* Info.plist */,
+				9F1455E1266982FA00C65F26 /* Weather.swift */,
+				9FB01EAB266BFF280000EEE4 /* UnitSetting.swift */,
 			);
 			path = Z4Cast;
 			sourceTree = "<group>";
@@ -208,7 +214,7 @@
 				};
 			};
 			buildConfigurationList = 9F93468B2668154E005D9B13 /* Build configuration list for PBXProject "Z4Cast" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F1455E2266982FA00C65F26 /* Weather.swift in Sources */,
 				9F9346982668154E005D9B13 /* ViewController.swift in Sources */,
 				9F9346942668154E005D9B13 /* AppDelegate.swift in Sources */,
+				9FB01EAC266BFF280000EEE4 /* UnitSetting.swift in Sources */,
 				9F9346962668154E005D9B13 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6BVXD257FL;
 				INFOPLIST_FILE = Z4Cast/Info.plist;
@@ -443,6 +452,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Yutopia.Z4Cast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,6 +462,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6BVXD257FL;
 				INFOPLIST_FILE = Z4Cast/Info.plist;
@@ -461,6 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Yutopia.Z4Cast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
